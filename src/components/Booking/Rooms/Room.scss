@@ -1,0 +1,73 @@
+// *{
+//   // border: 1px solid red;
+// }
+.col-room{
+  padding: 20px;
+}
+
+.room_comtainer{
+  // padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3) ;
+  height: 285px;
+  &:hover{
+    .cover{
+      background-size: 110% auto;
+    }
+  }
+
+  .cover{
+    height: 150px;
+    background-color: #eee;
+    position: relative;
+
+    background-size: 100% ;
+    background-position: center center;
+    transition: 0.5s;
+    
+    .times{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover{
+        color: red;
+      }
+    }
+    h3{
+      position: absolute;
+      bottom: 30px;
+      font-size: 20px;
+      padding: 5px 10px;
+      // 上下 左右
+      background-color: #fff;
+    }
+  }
+
+  .info{
+    padding: 10px;
+    h5{
+      font-size: 15px;
+      .icons{
+        // 跟文字排在一起
+        display: inline-block;
+        margin-left: 10px;
+        span{
+          display: inline-block;
+          margin-right: 10px;
+          opacity: 0.5;
+        }
+      }
+    }
+    .finalPrice{ 
+      float: right;
+      color: red;
+      // float 不參與元件排列
+      &:after{
+        content: '$'
+      }
+    }
+  }
+
+}

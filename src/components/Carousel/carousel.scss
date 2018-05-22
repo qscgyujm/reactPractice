@@ -1,0 +1,94 @@
+@import 'rest';
+
+*{
+  // border: 1px solid red;
+}
+
+.app{
+  @include size(100%);
+  @include flex_center;
+  overflow: hidden;
+  background-color: #1c1c1c;
+
+
+
+  .postarea{
+    // +include size(100%, 100%);
+    @include size(1230px, 250px);
+    white-space: nowrap;
+    // 此 CSS white-space 屬性決定如何處理元素內的空白字元。
+
+    .postss{
+      height: 100%;
+      position: relative;
+      transition: 1s;
+    }
+    // @include flex_center;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+    filter: saturate(0%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0 px);
+    filter: saturate(100%);
+  }
+}
+
+@keyframes sliceIn{
+  0%{
+    transform: translateX(-50px);
+  }
+  100%{
+    transform: translateX(0 px);
+
+  }
+}
+
+.cur_Item{
+  .cover{
+    animation: fadeIn 3s ease both;
+  }
+  .infos{
+    h5{
+      animation: sliceIn 1s .5s ease;
+      // 執行時間 delay時間
+    }
+  }
+}
+
+
+
+#FontAwesomeIcon{
+  @include size(40px);
+  
+  border: 1px solid white;
+  position: fixed;
+  border-radius: 50%;
+  
+
+  >path{
+    // stroke: white;
+    fill: white;
+    transition: .5s;
+    background-color: #1c1c1c;
+
+    &:hover{
+      fill: red;
+      transform: translate(.5);
+      // background-color: white;
+    }
+  }
+  // background-color: white
+}
+.control_left{
+  left: 50px
+}
+.control_right{
+  right: 50px
+}

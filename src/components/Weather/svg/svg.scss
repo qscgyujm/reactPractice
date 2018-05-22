@@ -1,0 +1,19 @@
+svg{
+  height: 100vh;
+}
+
+path{
+  stroke: white;
+  // The stroke property in CSS is for adding a border to SVG shapes.
+  // stroke 是svg的線條
+  fill: transparent;
+  // transparent ，當然不管是什麼顏色，透明都是看不見的；
+  // transparent 代表的是透明黑色，即 transparent hsla(0,0%,0%,0) = rgba(0,0,0,0) 。
+  // The fill property in CSS is for filling in the color of a SVG shape.
+  transition: transform .5s;
+  cursor: pointer;
+  &:hover{
+    fill: #ffd700;
+    transform: translate(-10px, -10px);
+  }
+}
