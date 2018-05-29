@@ -59,6 +59,13 @@ class Home extends Component {
           <li>
             <Link to="/Children">Children-Practice</Link>
           </li>
+          <li>
+            <Link to="/Lifecycle">練習React Lifecycle 舊版</Link>
+          </li>
+          {/* <li>
+            <Link to="/Lifecycle">練習React Lifecycle 舊版</Link>
+          </li> */}
+          
         </ul>
       </div>
     );

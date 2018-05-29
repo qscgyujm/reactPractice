@@ -12,6 +12,7 @@ import Articlepage from '../components/Articlepage/Articlepage';
 
 import TestRef from '../components/Practice/test';
 import Children from '../components/Practice/Children';
+import Lifecycle from '../components/Practice/Lifecycle';
 
 
 class Contain extends Component {
@@ -34,6 +35,8 @@ class Contain extends Component {
         
         <Route path="/TestRef" component={TestRef} />
         <Route path="/Children" component={Children} />
+        <Route path="/Lifecycle" component={Lifecycle} />
+        
       </div>
     );
   }

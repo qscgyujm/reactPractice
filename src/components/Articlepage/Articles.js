@@ -8,7 +8,8 @@ class Articles extends Component {
         {
           React.Children.map(children, (child, i) => {
             // if ( i < 1 ) return;
-            // console.log(child);
+            console.log(children);
+            console.log(child);
             return child;
           })
         }

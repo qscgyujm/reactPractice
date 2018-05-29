@@ -13,10 +13,6 @@ class Article extends Component {
       backgroundImage: `url('${coverUrl}')`,
       backgroundSize: 'cover'
     }
-    console.log(cover);
-    // http://image.zashare.org/uploads/2017_02_20_06_49_54_23.jpeg
-    // http://image.zashare.org/dropzone/uploads/2017_03_16_03_03_12_2017_03_12_05_12_36_hackpad.com_cPgQ59Izxkm_p.692518_1480866587976_IMG_6855.jpg   
-
 
     return (
       <div className='article col-4' >
